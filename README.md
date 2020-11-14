@@ -107,7 +107,7 @@ Available commands:
 
 ## Node.js:
 https://nodejs.org/en/
-Node.js JS runtime is needed for using Laravel
+Node.js JS runtime is needed for frontend on Laravel
 
 <img src="laravel.jpg">
 
@@ -133,11 +133,12 @@ cd LaravelSocialApp
 ```
 php artisan serve
 ```
-This will start php server and give address: http://127.0.0.1:8000 \
+This will start php server and give address: http://127.0.0.1:8000 
 
-Copy that address to webbrowser and open:\
+Copy that address to webbrowser and open:
 
 <img src="Laravel_sceeenshot.jpg">
+Displayed page is located on ./resources/views/welcome.blade.php
 
 **On ERROR:** If something is already running on port 8000 and page won't open on browser try changing port for current project
 ```
@@ -146,6 +147,21 @@ php artisan serve --port 8001
 
 **On ERROR:** If Avast antivirus detects false positive **SERVER.PHP** with virus **IDP.Generic**
 Create exeption
+
+**To create register and login for page run command on console**
+```
+php artisan make:auth
+```
+
+**On ERROR:** Command "make:auth" is not defined.
+```
+composer require laravel/ui
+php artisan ui vue --auth
+```
+
+
+
+
 
 ## Artisan - Laravel PHP Console:
 https://laravel.com/docs/8.x/artisan
