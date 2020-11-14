@@ -332,7 +332,20 @@ npm run dev
 ```
 
 ## Add Username to login form
-
+1. Open: *./resources/views/auth/register.blade.php*\
+2. Duplicate E-mail div\
+3. Change all instances of email in that div into username
+* To select multiple instances in VSCode hold down 'Alt' and use mouse left click
+4. To make new field as 'Required' open *./app/Http/Controllers/Auth/RegisterController.php* 
+5. Add next line into *validator()* function:
+```
+'username' => ['required', 'string', 'max:255', 'unique:users'],
+```
+6. Open *./database/migrations/XXXX_XX_XX_000000_create_users_table.php* 
+7. Add into db Schema next line:
+```
+$table->string('username')->unigue();
+```
 
 ## Artisan - Laravel PHP Console:
 https://laravel.com/docs/8.x/artisan
