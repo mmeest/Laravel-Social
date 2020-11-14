@@ -145,7 +145,7 @@ Displayed page is located on ./resources/views/welcome.blade.php
 php artisan serve --port 8001
 ```
 
-**On ERROR:** If Avast antivirus detects false positive **SERVER.PHP** with virus **IDP.Generic**
+**On ERROR:** If Avast antivirus detects false positive **SERVER.PHP** with virus **IDP.Generic**\
 Create exeption
 
 **To create register and login for page run command on console**
