@@ -223,6 +223,22 @@ vim database/database.sqlite
 **On ERROR:** 'vim' is not recognized as an internal or external command\
 You need to install SQLite and Vim editor
 
+**Save 'database.sqlite' file:**
+1. Press 'Esc'
+2. Write:
+```
+:w
+```
+3. Press 'Enter'
+
+**Exit Vim:**
+1. Press 'Esc'
+2. Write:
+```
+:qa
+```
+3. And press 'Enter'
+
 
 ## Artisan - Laravel PHP Console:
 https://laravel.com/docs/8.x/artisan
