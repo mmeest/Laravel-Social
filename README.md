@@ -106,8 +106,14 @@ Available commands:
 <img src="node.jpg">
 
 ## Node.js:
-https://nodejs.org/en/
+https://nodejs.org/en/ \
 Node.js JS runtime is needed for frontend on Laravel
+
+<img src="bootstrap.jpg">
+
+## Bootstrap
+https://getbootstrap.com/docs/4.0/getting-started/introduction/ \
+Bootstrap will be added automatically to Laravel project
 
 <img src="laravel.jpg">
 
