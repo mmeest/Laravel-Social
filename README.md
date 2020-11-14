@@ -239,6 +239,70 @@ You need to install SQLite and Vim editor
 ```
 3. And press 'Enter'
 
+**Inside '.env' file change Database('DB') section from:**
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravelsocialapp
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+**to:**
+
+```
+DB_CONNECTION=sqlite
+```
+
+**Stop the server and restart it:**
+ctrl+C
+```
+php artisan serve
+```
+
+**Migrate db to latest state:**
+```
+php artisan migrate
+```
+
+**Create New User**
+1. Click on 'Register'
+2. Fill in the form
+3. Click on 'Register'
+
+**On ERROR:** QueryException:
+Restart the PHP server
+
+'You are logged in!' will be displayed
+
+## Set up page Logo and Name to upper left corner:
+**Open ./views/layouts/app.blade.php**
+Replace:
+```
+{{ config('app.name', 'Laravel') }}
+```
+**to**
+```
+<div class="pl-3">Laravel Social App</div>
+```
+
+**For logo create folder:**
+./public/svg \
+and copy your logo('Logo.svg') file into that \
+in 'app.blade.php' before name add logo div:
+```
+<div><img src="/svg/Logo.svg" style="height: 25px; border-right: 1px solid #333;" alt="logo" class="pr-3"></div>
+```
+
+**To display Logo and Title next to eachother change:**
+```
+<a class="navbar-brand" href="{{ url('/') }}">
+```
+to:
+```
+<a class="navbar-brand d-flex" href="{{ url('/') }}">
+```
 
 ## Artisan - Laravel PHP Console:
 https://laravel.com/docs/8.x/artisan
