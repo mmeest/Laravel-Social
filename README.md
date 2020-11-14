@@ -146,7 +146,7 @@ php artisan serve --port 8001
 ```
 
 **On ERROR:** If Avast antivirus detects false positive **SERVER.PHP** with virus **IDP.Generic**\
-Create exeption
+Create exeption for **SERVER.PHP** file
 
 **To create register and login for page run command on console**
 ```
