@@ -153,14 +153,74 @@ Create exeption
 php artisan make:auth
 ```
 
+On 'Views' directory will be created directories 'auth', 'layouts' and file 'home.blade.php'
+
 **On ERROR:** Command "make:auth" is not defined.
 ```
 composer require laravel/ui
 php artisan ui vue --auth
 ```
 
+**To download current package dependencies run command:**
+```
+npm install
+```
+
+**On ERROR:** found 1 high severity vulnerability
+```
+npm audit fix
+```
+
+**On ERROR:** fixed 0 of 1 vulnerability
+```
+npm audit fix --force
+```
+
+**To compile project:**
+```
+npm run dev
+```
+
+'app.js' file is created inside ./public/js directory
+
+<img src="sqlite.jpg">
+
+## SQLite
+https://www.sqlite.org/index.html
+https://www.youtube.com/watch?v=XA3w8tQnYCA
+
+1. download SQLite proper version(**'Tools'** NOT **'DLL'** files):
+for example: sqlite-tools-win32-x86-3330000.zip
+
+2. extract 3 files 'sqldiff.exe', 'sqlite3.exe' and 'sqlite3analyzer.exe' into *C:\Program Files (x86)\SQLite* folder
+
+3. add System variable: \
+System Properties > Environment Variables > System Variables > New > \
+**Variable name:** sqlite
+**Variable value:** C:\Program Files (x86)\SQLite\sqlite3.exe
+
+4. add PATH to your system: \
+System Properties > Environment Variables > System Variables > Path > Edit > *C:\Program Files (x86)\SQLite*
+
+<img src="vim.jpg">
+
+## Vim
+https://www.vim.org/download.php#pc
+
+1. download and install Vim
+
+2. add PATH to your system: \
+System Properties > Environment Variables > System Variables > Path > Edit *C:\Program Files (x86)\Vim\vim82*
 
 
+## Creating database SQL for our project:
+Run command on terminal to create database file inside 'database' directory:
+```
+vim database/database.sqlite
+```
+
+**On ERROR:** 'vim' is not recognized as an internal or external command
+You need to install SQLite and Vim editor
 
 
 ## Artisan - Laravel PHP Console:
