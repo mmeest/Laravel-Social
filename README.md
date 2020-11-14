@@ -129,6 +129,24 @@ laravel new LaravelSocialApp
 cd LaravelSocialApp
 ```
 
+**To start php server**
+```
+php artisan serve
+```
+This will start php server and give address: http://127.0.0.1:8000 \
+
+Copy that address to webbrowser and open:\
+
+<img src="Laravel_screenshot.jpg">
+
+**On ERROR:** If something is already running on port 8000 and page won't open on browser try changing port for current project
+```
+php artisan serve --port 8001
+```
+
+**On ERROR:** If Avast antivirus detects false positive **SERVER.PHP** with virus **IDP.Generic**
+Create exeption
+
 ## Artisan - Laravel PHP Console:
 https://laravel.com/docs/8.x/artisan
 
