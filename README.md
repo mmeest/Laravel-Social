@@ -206,6 +206,7 @@ System Properties > Environment Variables > System Variables > Path > Edit > *C:
 
 ## Vim
 https://www.vim.org/download.php#pc
+Vim is a text editor created for Unix
 
 1. download and install Vim
 
@@ -219,7 +220,7 @@ Run command on terminal to create database file inside 'database' directory:
 vim database/database.sqlite
 ```
 
-**On ERROR:** 'vim' is not recognized as an internal or external command
+**On ERROR:** 'vim' is not recognized as an internal or external command\
 You need to install SQLite and Vim editor
 
 
