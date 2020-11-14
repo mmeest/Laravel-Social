@@ -341,7 +341,7 @@ npm run dev
 ```
 'username' => ['required', 'string', 'max:255', 'unique:users'],
 ```
-6. Open *./database/migrations/XXXX_XX_XX_000000_create_users_table.php* 
+6. To add migration on database open *./database/migrations/XXXX_XX_XX_000000_create_users_table.php* 
 7. Add into db Schema next line:
 ```
 $table->string('username')->unigue();
