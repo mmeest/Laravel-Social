@@ -137,7 +137,7 @@ This will start php server and give address: http://127.0.0.1:8000 \
 
 Copy that address to webbrowser and open:\
 
-<img src="Laravel_screenshot.jpg">
+<img src="Laravel_screeenshot.jpg">
 
 **On ERROR:** If something is already running on port 8000 and page won't open on browser try changing port for current project
 ```
