@@ -304,6 +304,36 @@ to:
 <a class="navbar-brand d-flex" href="{{ url('/') }}">
 ```
 
+**Add fonts to your app:**
+You can get fonts from:\
+https://fonts.google.com/
+
+1. Go to selected font page\
+2. Choose selected font settings\
+3. Click '@import' radio button\
+4. Copy the code into your *./resources/sass/app.scss* file\
+
+Example code:
+```
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+```
+5. Reference to this font in *./resources/sass/_variables.sass* on variables section change
+```
+$font-family-sans-serif: 'Nunito', sans-serif;
+```
+to
+```
+$font-family-sans-serif: 'Open Sans', sans-serif;
+```
+
+To see the changes made we need to recompile our project
+```
+npm run dev
+```
+
+## Add Username to login form
+
+
 ## Artisan - Laravel PHP Console:
 https://laravel.com/docs/8.x/artisan
 
