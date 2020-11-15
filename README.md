@@ -3,17 +3,10 @@
 <p align="center"><img src="AppScreen.jpg" widht="300px"></p>
 
 <h1 align="center">
-  <a href="https://reactnative.dev/">
-    React Native
-  </a>
+    Laravel Social Media Application
 </h1>
 
 <p align="center">
-  <strong>Learn once, write anywhere:</strong><br>
-  Build mobile apps with React.
-</p>
-
-<p align="center>
 	<strong>Social media app written in Laravel</strong><br>
 	Laravel is open source PHP framework.
 </p>
