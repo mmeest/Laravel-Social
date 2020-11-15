@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=slice&color=auto&height=130&section=header&text=Laravel&fontSize=30&fontAlign=80)
 
-
 <p align="center"><img src="AppScreen.jpg" widht="300px"></p>
+
 <p align="center>
 	<strong>Social media app written in Laravel</strong><br>
 	Laravel is open source PHP framework.
