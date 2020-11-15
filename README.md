@@ -1,6 +1,33 @@
 ![header](https://capsule-render.vercel.app/api?type=slice&color=auto&height=130&section=header&text=Laravel&fontSize=30&fontAlign=80)
 
 
+<p align="center"><img src="AppScreen.jpg" widht="300px"></p>
+<p align="center>
+	<strong>Social media app written in Laravel</strong><br>
+	Laravel is open source PHP framework.
+</p>
+
+
+<h3 align="center">
+	<a href="https://getcomposer.org/">Composer</a>
+	<span> · </span>
+	<a href="https://nodejs.org/en/">Node.js</a>
+	<span> · </span>
+	<a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap</a>
+	<span> · </span>
+	<a href="https://laravel-news.com/laravel-tinker">Tinker</a>
+	<span> · </span>
+	<a href="https://laravel.com/">Laravel</a>
+	<span> · </span>
+	<a href="https://www.sqlite.org/index.html">SQLite</a>
+	<span> · </span>
+	<a href="https://www.vim.org/download.php#pc">Vim</a>
+</h3>
+
+## Contents
+
+- [Composer] (#-Composer:)
+- [Node.js] (#-Node.js:)
 
 
 # Laravel-Social
