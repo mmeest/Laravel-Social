@@ -31,7 +31,7 @@
 ## Contents
 
 - [Composer](#composer)
-- [Node.js](#node)
+- [Node.js](#node.js)
 - [Bootstrap](#bootstrap)
 - [Tinker](#tinker)
 - [Laravel](#laravel)
@@ -40,7 +40,7 @@
 - [Creating database SQL for our project:](#creating-database-sql-for-our-project)
 - [Set up page Logo and Name to upper left corner:](#set-up-page-logo-and-name-to-upper-left-corner)
 - [Add Username to login form](#add-username-to-login-form)
-- [To display logged in user's registererd 'username' on page header:](#to-display-logged-in-user's-registered-'username'-on-page-header:)
+- [To display logged in user's registererd 'username' on page header:](#to-display-username-on-page-header:)
 - [To display homepage even when user is not logged in:](#to-display-homepage-even-when-user-is-not-logged-in)
 - [Artisan - Laravel PHP Console:](#artisan---laravel-php-console)
 - [Laravel Vapor:](#laravel-vapor)
@@ -516,7 +516,7 @@ User::all();
      ],
 ```
 
-## To display logged in user's registered 'username' on page header:
+## To display username on page header:
 1. Open *./resources/views/layouts/app.blade.php*
 2. Change next line:
 ```
