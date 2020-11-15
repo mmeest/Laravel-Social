@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container w-50">
+<div class="container w-75">
     <div class="row">
         <div class="col-3 p-5">
             <img src="/img/main.jpg" alt="" class="rounded-circle" style="width: 100px">
@@ -28,6 +28,30 @@
         </div>
         <div class="col-4">
             <img src="img/03.jpg" alt="" class="w-100">
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col-4">
+            <img src="img/04.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-4">
+            <img src="img/05.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-4">
+            <img src="img/06.jpg" alt="" class="w-100">
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col-4">
+            <img src="img/07.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-4">
+            <img src="img/08.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-4">
+            <img src="img/09.jpg" alt="" class="w-100">
         </div>
     </div>
 </div>
