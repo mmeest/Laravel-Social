@@ -30,7 +30,7 @@
 
 ## Contents
 
-- [Composer](#-Composer)
+- [Composer](#-composer)
 - [Node.js](#-node.js)
 - [Bootstrap](#-bootstrap)
 - [Tinker](#-tinker)
@@ -252,7 +252,7 @@ npm run dev
 
 <img src="sqlite.jpg">
 
-## SQLite
+##SQLite
 https://www.sqlite.org/index.html
 https://www.youtube.com/watch?v=XA3w8tQnYCA
 
@@ -271,7 +271,7 @@ System Properties > Environment Variables > System Variables > Path > Edit > *C:
 
 <img src="vim.jpg">
 
-## Vim
+##Vim
 https://www.vim.org/download.php#pc
 Vim is a text editor created for Unix
 
