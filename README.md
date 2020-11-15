@@ -115,6 +115,28 @@ Node.js JS runtime is needed for frontend on Laravel
 https://getbootstrap.com/docs/4.0/getting-started/introduction/ \
 Bootstrap will be added automatically to Laravel project
 
+<img src="tinker.jpg">
+
+## Tinker
+https://laravel.com/docs/8.x/artisan#tinker
+https://laravel-news.com/laravel-tinker
+PHP shell to emulate and interact with application on background\
+
+Command:
+```
+php artisan tinker
+```
+
+**To display all users**
+```
+User::all();
+```
+
+**Exit Tinker**
+```
+exit
+```
+
 <img src="laravel.jpg">
 
 ## Laravel:
@@ -272,6 +294,11 @@ php artisan serve
 php artisan migrate
 ```
 
+**Create fresh migration. Erasing existing data**
+```
+php artisan migrate:fresh
+```
+
 **Create New User**
 1. Click on 'Register'
 2. Fill in the form
@@ -281,6 +308,8 @@ php artisan migrate
 Restart the PHP server
 
 'You are logged in!' will be displayed
+
+
 
 ## Set up page Logo and Name to upper left corner:
 **Open ./views/layouts/app.blade.php**
@@ -342,15 +371,57 @@ npm run dev
 2. Duplicate E-mail div\
 3. Change all instances of email in that div into username
 * To select multiple instances in VSCode hold down 'Alt' and use mouse left click
-4. To make new field as 'Required' open *./app/Http/Controllers/Auth/RegisterController.php* 
+4. To make new field as 'Required' open *./app/Http/Controllers/Auth/RegisterController.php* \
+* Validation at PHP level:
+```
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+    }
+```
 5. Add next line into *validator()* function:
 ```
 'username' => ['required', 'string', 'max:255', 'unique:users'],
 ```
 6. To add migration on database open *./database/migrations/XXXX_XX_XX_000000_create_users_table.php* 
+* Validation at database level:
+```
+    public function up()
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+    }
+```
 7. Add into db Schema next line:
 ```
 $table->string('username')->unigue();
+```
+
+**Add new db row 'username' to 'User.php'**
+There is one more protective layer on Laravel for altering database 'User.php'\
+1. Open up *./app/Models/User.php* \
+Database fields are represented on User class
+```
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
+```
+2. Add 'username' to it
+```
+'username',
 ```
 
 ## Artisan - Laravel PHP Console:
