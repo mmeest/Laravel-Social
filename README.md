@@ -13,19 +13,19 @@
 
 
 <h3 align="center">
-	<a href="https://getcomposer.org/">Composer</a>
+	<a target="_blank" href="https://getcomposer.org/">Composer</a>
 	<span> · </span>
-	<a href="https://nodejs.org/en/">Node.js</a>
+	<a target="_blank" href="https://nodejs.org/en/">Node.js</a>
 	<span> · </span>
-	<a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap</a>
+	<a target="_blank" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap</a>
 	<span> · </span>
-	<a href="https://laravel-news.com/laravel-tinker">Tinker</a>
+	<a target="_blank" href="https://laravel-news.com/laravel-tinker">Tinker</a>
 	<span> · </span>
-	<a href="https://laravel.com/">Laravel</a>
+	<a target="_blank" href="https://laravel.com/">Laravel</a>
 	<span> · </span>
-	<a href="https://www.sqlite.org/index.html">SQLite</a>
+	<a target="_blank" href="https://www.sqlite.org/index.html">SQLite</a>
 	<span> · </span>
-	<a href="https://www.vim.org/download.php#pc">Vim</a>
+	<a target="_blank" href="https://www.vim.org/download.php#pc">Vim</a>
 </h3>
 
 ## Contents
