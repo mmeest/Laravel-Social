@@ -515,6 +515,20 @@ php artisan make:controller ProfilesController
 ```
 New controller is created *./app/Http/Controllers/ProfilesController.php*
 
+Edit 'ProfilesController' class inside that file:
+```
+class ProfilesController extends Controller
+{
+    public function index()
+    {
+        return view('home');
+    }
+}
+```
+And in *./routes/web.php* change 'HomeController' -> 'ProfilesController':
+```
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+```
 
 ## Artisan - Laravel PHP Console:
 https://laravel.com/docs/8.x/artisan
