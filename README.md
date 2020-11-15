@@ -252,7 +252,7 @@ npm run dev
 <img src="sqlite.jpg">
 
 ## SQLite
-https://www.sqlite.org/index.html
+https://www.sqlite.org/index.html \
 https://www.youtube.com/watch?v=XA3w8tQnYCA
 
 1. download SQLite proper version(**'Tools'** NOT **'DLL'** files):
