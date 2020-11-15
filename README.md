@@ -11,10 +11,6 @@
 	Laravel is open source PHP framework.
 </p>
 
-[link text](the link){:target="_blank"}
-
-[Composer](https://getcomposer.org/){:target="_blank"}
-
 <h3 align="center">    
 	<a target="_blank" href="https://getcomposer.org/">Composer</a>
 	<span> · </span>
