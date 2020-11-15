@@ -424,6 +424,97 @@ Database fields are represented on User class
 'username',
 ```
 
+**Register new user with 'Username'**
+If you have 4 files modified as previously explained:
+* register.blade.php
+* RegisterController.php
+* XXXX_XX_XX_000000_create_users_table.php
+* User.php
+
+Before you can register new user, database needs to be migrated:
+```
+php artisan migrate:fresh
+```
+
+With 'fresh' keyword all tables are rewritten and users deleted\
+Refresh the page and try to register new user.
+
+**On ERROR:** SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: users.username
+Open *./app/Http/Controllers/Auth/RegisterController.php* \
+If 'username' not present in 'protected function create(array $data)':
+```
+    protected function create(array $data)
+    {
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],            
+            'password' => Hash::make($data['password']),
+        ]);
+    }
+```
+then add it:
+```
+'username' => $data['username'],
+```
+
+* Now when checking new user with tinker:
+```
+php artisan tinker
+User::all();
+```
+* Result should be something like that, with 'username' field:
+```
+     all: [
+       App\Models\User {#4000
+         id: "1",
+         name: "Test User",
+         email: "test@test.com",
+         username: "TestUser",
+         email_verified_at: null,
+         created_at: "2020-11-15 11:57:19",
+         updated_at: "2020-11-15 11:57:19",
+       },
+     ],
+```
+
+## To display loged in user's registered 'username' on page header:
+1. Open *./resources/views/layouts/app.blade.php*
+2. Change next line:
+```
+{{ Auth::user()->name }}
+```
+to
+```
+{{ Auth::user()->username }}
+```
+
+## To display homepage even when user is not logged in:
+On our current project for displaying homepage, routing is used in:
+*./routes/web.php*
+```
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+```
+and *./app/Http/Controllers/HomeController.php*
+```
+public function __construct()
+    {
+        $this->middleware('auth');
+    }
+```
+
+**Let's create new controller with tinker 'make:controller' command:**
+To get help abotu any command on tinker use help function (example 'make:controller'):
+```
+php artisan help make:controller
+```
+
+First we make new 'ProfilesController':
+```
+php artisan make:controller ProfilesController
+```
+New controller is created *./app/Http/Controllers/ProfilesController.php*
+
+
 ## Artisan - Laravel PHP Console:
 https://laravel.com/docs/8.x/artisan
 
