@@ -1,13 +1,9 @@
 ![header](https://capsule-render.vercel.app/api?type=slice&color=auto&height=130&section=header&text=Laravel&fontSize=30&fontAlign=80)
 
 
-(function () {
-	var $ = document.querySelector.bind(document);
-	$('#readme').setAttribute('style', 'position:absolute;top:0;left:0;right:0;bottom:0;z-index:100;background-color:white');
-	$('#readme>article').setAttribute('style', 'border: none');
-	$('body').innerHTML = $('#readme').outerHTML;
-	window.print();
-})();
+document.querySelector('#readme').setAttribute('style', 'position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 100; background-color: white')
+document.querySelector('body').appendChild(document.querySelector('#readme'))
+window.print()
 
 # Laravel-Social
 Social media app written in Laravel\
