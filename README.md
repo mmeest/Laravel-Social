@@ -31,7 +31,7 @@
 ## Contents
 
 - [Composer](#-composer)
-- [Node.js](#-node.js:)
+- [Node.js](#-node.js)
 - [Bootstrap](#-bootstrap)
 - [Tinker](#-tinker)
 - [Laravel](#-laravel)
