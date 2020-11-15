@@ -31,7 +31,7 @@
 ## Contents
 
 - [Composer](#composer)
-- [Node.js](#node.js)
+- [Node.js](#node-js)
 - [Bootstrap](#bootstrap)
 - [Tinker](#tinker)
 - [Laravel](#laravel)
@@ -144,7 +144,7 @@ Available commands:
 
 <img src="node.jpg">
 
-## Node.js:
+## Node js:
 https://nodejs.org/en/ \
 Node.js JS runtime is needed for frontend on Laravel
 
