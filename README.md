@@ -30,7 +30,7 @@
 
 ## Contents
 
-- [Composer](#-composer)
+- [Composer](#-Composer)
 - [Node.js](#-node.js)
 - [Bootstrap](#-bootstrap)
 - [Tinker](#-tinker)
